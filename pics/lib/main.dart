@@ -11,7 +11,13 @@ void main() {
       appBar: AppBar(
         title: const Text("Let's see some images"),
       ),
-      floatingActionButton: FloatingActionButton(onPressed: () {  },),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {  },
+        // ignore: prefer_const_constructors
+        child: Icon(
+          Icons.add
+        ),
+      ),
     ),
   );
 
