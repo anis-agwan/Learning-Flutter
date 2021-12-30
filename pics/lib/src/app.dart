@@ -12,6 +12,10 @@ class App extends StatefulWidget {
 class AppState extends State<App> {
   // Must define a build method that returns the widgets that this widget will show
   int counter = 0;
+  void fetchImage() {
+
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -22,11 +26,7 @@ class AppState extends State<App> {
         ),
         body: Text("$counter"),
         floatingActionButton: FloatingActionButton(
-          onPressed: () {
-            setState(() {
-              counter += 1;
-            });
-          },
+          onPressed: fetchImage,
           // ignore: prefer_const_constructors
           child: Icon(
               Icons.add
